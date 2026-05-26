@@ -33,8 +33,9 @@ wine$quality <- as.factor(wine$quality)
 
 # ==========================================
 
-# 3. 整合為結構清晰的 Data Frame
-# 3.1 呈現 table
+# 3. 整合為結構清晰的 Data Frame 並呈現文字表格
+class_counts <- table(wine$quality)
+class_proportions <- prop.table(class_counts) * 100
 balance_df <- data.frame(
   Quality = names(class_counts),
   Count = as.vector(class_counts),
@@ -43,7 +44,7 @@ balance_df <- data.frame(
 print("--- 類別平衡統計表 ---")
 print(balance_df)
 
-# 3.2 呈現類別不平衡長條圖 
+# 3.1 呈現類別不平衡長條圖 
 ggplot(balance_df, aes(x = Quality, y = Count, fill = Quality)) +
   geom_bar(stat = "identity", color = "black", alpha = 0.8) +
   geom_text(aes(label = paste0(Count, "\n(", Percentage, "%)")), vjust = -0.2, size = 3.5) +
