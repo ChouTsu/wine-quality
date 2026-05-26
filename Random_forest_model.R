@@ -64,7 +64,7 @@ print(evaluation_matrix)
 importance_values <- as.data.frame(importance(rf_model))
 importance_values$Variable <- rownames(importance_values)
 
-# 繪製精美的變數重要性條形圖
+# 繪製變數重要性長條圖
 ggplot(importance_values, aes(x = reorder(Variable, MeanDecreaseGini), y = MeanDecreaseGini)) +
   geom_bar(stat = "identity", fill = "steelblue") +
   coord_flip() + # 讓圖表橫過來比較好閱讀
