@@ -1,8 +1,5 @@
 install.packages("ggplot2") 
 install.packages("dplyr")
-install.packages("GGally")
-install.packages("caret")
-install.packages("randomForest")
 
 # ==========================================
 
