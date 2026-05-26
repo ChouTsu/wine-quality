@@ -1,3 +1,7 @@
+install.packages("caret")
+install.packages("randomForest")
+
+# ==========================================
 
 # 0. 安裝並載入機器學習必備套件 caret (若未安裝請先執行 install.packages("caret"))
 # 註：某些系統可能還需要安裝 install.packages("randomForest")
