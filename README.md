@@ -1,6 +1,8 @@
 # Wine Quality Analysis
 Research goal: to predict whether a wine receives a high-quality score based on its physicochemical measurements, and to identify which specific chemical properties (such as alcohol content or acidity) are the most critical determinants of this classification.
 
+Dataset Resource: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset?resource=download
+
 ## About `Exploratory_data_analysis.R` file
 ### Data Preprocessing & Exploratory Data Analysis (EDA)
 這個專案使用 R 語言針對紅酒品質數據集（WineQT）進行資料清洗、前處理以及深入的探索性資料分析（EDA）。本階段的分析著重於探索各項化學成分（如酒精濃度、揮發性酸度）與紅酒品質之間的關係，並為後續的機器學習分類模型（Classification）奠定基礎。
