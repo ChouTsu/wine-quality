@@ -7,7 +7,7 @@ Dataset Resource: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset?r
 ### Data Preprocessing & Exploratory Data Analysis (EDA)
 這個專案使用 R 語言針對紅酒品質數據集（WineQT）進行資料清洗、前處理以及深入的探索性資料分析（EDA）。本階段的分析著重於探索各項化學成分（如酒精濃度、揮發性酸度）與紅酒品質之間的關係，並為後續的機器學習分類模型（Classification）奠定基礎。
 
-### Working Flow
+### Workflow
 1. 資料載入與清洗 (Data Loading & Cleaning)
    - 載入 `WineQT.csv` 數據集（共 1,143 筆觀測值、13 個變數）。
    - 移除與預測無關的 `Id` 欄位。
@@ -25,7 +25,7 @@ Dataset Resource: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset?r
 ### Machine Learning Modeling & Evaluation
 本階段專案使用 R 語言中的隨機森林（Random Forest）演算法，針對前處理後的紅酒數據進行二分類預測（預測紅酒品質為 `good` 或 `bad`）。內容涵蓋資料分層抽樣、模型建置、測試集效能評估以及化學特徵重要性分析。
 
-### Working Flow
+### Workflow
 1. 資料分層抽樣 (Stratified Data Splitting)
    - 使用 `caret` 套件進行 **70% 訓練集（Training Set）與 30% 測試集（Test Set）** 的切分。
    - 採用分層抽樣（Stratified Sampling），確保訓練集與測試集中的 `good`/`bad` 標籤比例保持一致，避免抽樣偏差。
